@@ -109,6 +109,10 @@ public class ClaimItem {
 	@ManyToOne
 	@JoinColumn(name = "PatientId", nullable = false)
 	private Patient patient;
+	
+	@ManyToOne
+	@JoinColumn(name = "PharmacyId")
+	private Pharmacy pharmacy;
 
 	@ManyToOne
 	@JoinColumn(name = "PaymentId")
